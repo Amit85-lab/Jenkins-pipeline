@@ -10,6 +10,6 @@ def testApp() {
 
 def deployApp() {
     sh '''
-        docker run -d -p 8080:80 --name panu nginx:latest
+        docker run -d -p 8092:80 --name panu nginx:latest
     '''
 }
