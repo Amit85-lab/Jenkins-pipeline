@@ -10,8 +10,6 @@ def testApp() {
 
 def deployApp() {
     sh '''
-        docker stop myapp || true
-        docker rm myapp || true
-        docker run -d -p 8080:80 --name myapp nginx:latest
+        docker run -d -p 8080:80 --name panu nginx:latest
     '''
 }
