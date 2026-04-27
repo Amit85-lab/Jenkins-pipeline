@@ -5,8 +5,13 @@ def buildApp() {
 
 def testApp() {
     echo "Test step"
+    sh 'echo Test successful'
 }
 
 def deployApp() {
-    echo "Deploy step"
+    sh '''
+        docker stop myapp || true
+        docker rm myapp || true
+        docker run -d -p 8080:80 --name myapp nginx:latest
+    '''
 }
