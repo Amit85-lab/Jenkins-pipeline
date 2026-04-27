@@ -1,6 +1,6 @@
 def buildApp() {
     echo "Building Docker image..."
-       sh 'docker build -t nginx:latest .'
+       docker build -t nginx:latest .'
 }
 
 def testApp() {
