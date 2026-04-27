@@ -10,6 +10,6 @@ def testApp() {
 
 def deployApp() {
     sh '''
-        docker run -d -p 8092:80 --name panu_$(date +%s) nginx:latest
+        docker run -d -p 8095:80 --name panu_$(date +%s) nginx:latest
     '''
 }
