@@ -1,6 +1,6 @@
 def buildApp() {
     echo "Building Docker image..."
-    sh 'docker build -t myimage:latest .' 
+        sh 'docker build -t myimage:latest multifunction/'
 }
 
 def testApp() {
