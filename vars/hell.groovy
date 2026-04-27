@@ -1,5 +1,6 @@
 def buildApp() {
-    echo "Build step"
+    echo "Building Docker image..."
+    sh 'docker build -t myimage:latest .' 
 }
 
 def testApp() {
